@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Round</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pixel-container">
+    <header class="pixel-header">
+      <div class="logo">
+        <h1>Special Round</h1>
+      </div>
+      <nav class="pixel-nav">
+        <ul>
+          <li><a href="#about" class="pixel-link">О Джеме</a></li>
+          <li><a href="#schedule" class="pixel-link">Расписание</a></li>
+          <li><a href="#games" class="pixel-link">Игры</a></li>
+          <li><a href="#rules" class="pixel-link">Правила</a></li>
+        </ul>
+      </nav>
+      <div class="language-switch">
+        <button id="ru-btn" class="pixel-btn active">RU</button>
+        <button id="en-btn" class="pixel-btn">EN</button>
+      </div>
+    </header>
+
+    <!-- Hero баннер -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="title ru">Создавай игры за 60 часов!</h1>
+        <h1 class="title en">Create games in 60 hours!</h1>
+        <p class="subtitle ru">Начало: пятница, 12:00 • Конец: воскресенье, 22:00 (МСК)</p>
+        <p class="subtitle en">Start: Friday, 12:00 • End: Sunday, 22:00 (MSK)</p>
+        <div class="event-info ru">
+          <div class="info-badge">Командное соревнование: до 4 человек</div>
+          <div class="info-badge">Онлайн-формат</div>
+        </div>
+        <div class="event-info en">
+          <div class="info-badge">Team format: 4 people</div>
+          <div class="info-badge">Online format</div>
+          <div class="info-badge">Theme announced on start day</div>
+        </div>
+        <div class="action-buttons">
+          <button class="pixel-btn primary ru">Регистрация</button>
+          <button class="pixel-btn primary en">Registration</button>
+          <button class="pixel-btn secondary ru">Подробнее</button>
+          <button class="pixel-btn secondary en">Learn More</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="pixel-art-container"></div>
+      </div>
+    </section>
+
+    <!-- О джеме -->
+    <section id="about" class="section">
+      <div class="pixel-border">
+        <h2 class="section-title ru">О Джеме</h2>
+        <h2 class="section-title en">About the Jam</h2>
+        <div class="section-content">
+          <p class="ru">Special Round - это интенсивный онлайн-геймджем, где команды разработчиков создают игровой прототип (MVP) в формате командной разработки за ограниченное время (60 часов). Цель мероприятия - создание оригинальной игры, которая соответствует тематике.</p>
+          <p class="en">Special Round is an intensive online game jam where teams of developers create a game prototype (MVP) in team development format within a limited time (60 hours). The purpose of the event is to create an original game that matches the theme.</p>
+          <div class="features">
+            <div class="feature">
+              <div class="pixel-icon workshop"></div>
+              <h3 class="ru">Статистика</h3>
+              <h3 class="en">Team Work</h3>
+              <p class="ru">Полное отсутствие сна</p>
+              <p class="en">4 people per team</p>
+            </div>
+            <div class="feature">
+              <div class="pixel-icon community"></div>
+              <h3 class="ru">Коммуникация</h3>
+              <h3 class="en">Communication</h3>
+              <p class="ru">Обменяйтесь опытом с другими разработчиками</p>
+              <p class="en">Discord and other platforms</p>
+            </div>
+            <div class="feature">
+              <div class="pixel-icon prizes"></div>
+              <h3 class="ru">Награды</h3>
+              <h3 class="en">Evaluation</h3>
+              <p class="ru">Призовой фонд 3000 руб.</p>
+              <p class="en">Professional jury + voting</p>
+            </div>
+          </div>
+          <div class="about-contact ru">
+            <h3>Организатор и контактная информация</h3>
+            <ul>
+              <li>Электронная почта: specialroundjam@gmail.com</li>
+              <li>Discord: <a href="#">[ссылка]</a></li>
+              <li>Telegram: <a href="#">[ссылка]</a></li>
+            </ul>
+          </div>
+          <div class="about-contact en">
+            <h3>Organizer and Contact Information</h3>
+            <ul>
+              <li>Email: gamejam2023@support.com</li>
+              <li>Discord: <a href="#">[link]</a></li>
+              <li>Telegram: <a href="#">[link]</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Расписание -->
+    <section id="schedule" class="section">
+      <div class="pixel-border">
+        <h2 class="section-title ru">Расписание</h2>
+        <h2 class="section-title en">Schedule</h2>
+        <div class="tabs">
+          <button class="tab-btn pixel-btn active" data-day="1">
+            <span class="ru">День 1</span>
+            <span class="en">Day 1</span>
+          </button>
+          <button class="tab-btn pixel-btn" data-day="2">
+            <span class="ru">День 2</span>
+            <span class="en">Day 2</span>
+          </button>
+          <button class="tab-btn pixel-btn" data-day="3">
+            <span class="ru">День 3</span>
+            <span class="en">Day 3</span>
+          </button>
+          <button class="tab-btn pixel-btn" data-day="4">
+            <span class="ru">День 4</span>
+            <span class="en">Day 3</span>
+          </button>
+          <button class="tab-btn pixel-btn" data-day="5">
+            <span class="ru">День 5</span>
+            <span class="en">Day 3</span>
+          </button>
+        </div>
+        <div class="schedule-content">
+          <!-- Расписание загружается через JavaScript -->
+          <div id="schedule-day-1" class="schedule-day active"></div>
+          <div id="schedule-day-2" class="schedule-day"></div>
+          <div id="schedule-day-3" class="schedule-day"></div>
+          <div id="schedule-day-4" class="schedule-day"></div>
+          <div id="schedule-day-5" class="schedule-day"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Игры -->
+    <section id="games" class="section">
+      <div class="pixel-border">
+        <h2 class="section-title ru">Игры участников</h2>
+        <h2 class="section-title en">Participants' Games</h2>
+        <div class="games-filter">
+          <div class="filter-group ru">
+            <label>Фильтр по тегам:</label>
+            <div id="tags-container-ru" class="tags-container"></div>
+          </div>
+          <div class="filter-group en">
+            <label>Filter by tags:</label>
+            <div id="tags-container-en" class="tags-container"></div>
+          </div>
+        </div>
+        <div id="games-grid" class="games-grid">
+          <!-- Игры загружаются через JavaScript -->
+        </div>
+        <div class="games-pagination">
+          <button class="pixel-btn pagination-prev">
+            <span class="ru">Назад</span>
+            <span class="en">Previous</span>
+          </button>
+          <div class="pagination-info">
+            <span class="ru">Страница <span id="current-page">1</span> из <span id="total-pages">3</span></span>
+          </div>
+          <button class="pixel-btn pagination-next">
+            <span class="ru">Далее</span>
+            <span class="en">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Правила -->
+    <section id="rules" class="section">
+      <div class="pixel-border">
+        <h2 class="section-title ru">Правила и положения</h2>
+        <h2 class="section-title en">Rules & Guidelines</h2>
+        <div class="rules-content">
+          <div class="rules-list ru">
+            <div class="rule">
+              <div class="rule-number">1</div>
+              <p>Команда от 2 до 4 человек. Замена участников запрещена.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">2</div>
+              <p>Минимальный возраст участников: 14 лет.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">3</div>
+              <p>Тема объявляется на открытии мероприятия.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">4</div>
+              <p>Запрещено использование кода или идей, созданных до начала геймджема.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">5</div>
+              <p>Разрешается использование бесплатных ассетов и моделей.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">6</div>
+              <p>Исполняемый файл: WebGL, .exe. Исходные материалы: архив .zip или репозиторий Git.</p>
+            </div>
+          </div>
+          <div class="rules-list en">
+            <div class="rule">
+              <div class="rule-number">1</div>
+              <p>Team consists of 4 people. Participant substitution is prohibited.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">2</div>
+              <p>Minimum age of participants: 14 years.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">3</div>
+              <p>The theme is announced at the opening of the event.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">4</div>
+              <p>Use of code, assets, or ideas created before the game jam starts is prohibited.</p>
+            </div>
+            <div class="rule">
+              <div class="rule-number">5</div>
+              <p>Executable file: WebGL, .exe. Source materials: .zip archive or Git repository.</p>
+            </div>
+          </div>
+          <div class="rules-details ru">
+            <h3>Критерии оценки</h3>
+            <p>Проекты оцениваются по шкале от 0 до 200 баллов:</p>
+            <ol>
+              <li>Фан и впечатление</li>
+              <li>Техническая реализация</li>
+              <li>Стиль</li>
+              <li>Презентация</li>
+              <li>Оценка от команды</li>
+            </ol>
+            <h3>Авторские права</h3>
+            <p>Участники сохраняют права на свои проекты. Организаторы вправе использовать материалы для рекламы с указанием авторства.</p>
+          </div>
+          <div class="rules-details en">
+            <h3>Judging Criteria</h3>
+            <p>Projects are evaluated on a scale from 0 to 10 points:</p>
+            <ol>
+              <li>Adherence to the stated theme</li>
+              <li>Technical implementation</li>
+              <li>Creativity and originality</li>
+              <li>Participant voting (additional points)</li>
+            </ol>
+            <h3>Copyright</h3>
+            <p>Participants retain rights to their projects. Organizers may use materials for promotional purposes with attribution.</p>
+          </div>
+          <div class="registration-cta">
+            <button class="pixel-btn primary large ru">Зарегистрироваться сейчас</button>
+            <button class="pixel-btn primary large en">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pixel-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Special Round</h2>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="ru">Ссылки</h3>
+            <h3 class="en">Links</h3>
+            <ul>
+              <li><a href="#" class="ru">Главная</a><a href="#" class="en">Home</a></li>
+              <li><a href="#about" class="ru">О Джеме</a><a href="#about" class="en">About</a></li>
+              <li><a href="#schedule" class="ru">Расписание</a><a href="#schedule" class="en">Schedule</a></li>
+              <li><a href="#games" class="ru">Игры</a><a href="#games" class="en">Games</a></li>
+              <li><a href="#rules" class="ru">Правила</a><a href="#rules" class="en">Rules</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="ru">Контакты</h3>
+            <h3 class="en">Contact</h3>
+            <p class="ru">Email: specialroundjam@gmail.com</p>
+            <p class="en">Email: gamejam2023@support.com</p>
+            <p class="ru">Discord: <a href="#">[ссылка]</a></p>
+            <p class="en">Discord: <a href="#">[link]</a></p>
+            <p class="ru">Telegram: <a href="#">[ссылка]</a></p>
+            <p class="en">Telegram: <a href="#">[link]</a></p>
+          </div>
+          <div class="footer-column">
+            <h3 class="ru">Социальные сети</h3>
+            <h3 class="en">Social Media</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <div class="pixel-icon twitter"></div>
+              </a>
+              <a href="#" class="social-link">
+                <div class="pixel-icon discord"></div>
+              </a>
+              <a href="#" class="social-link">
+                <div class="pixel-icon itch"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="ru">© 2025 Special Round. Все права защищены.</p>
+        <p class="en">© 2025 Special Round. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
